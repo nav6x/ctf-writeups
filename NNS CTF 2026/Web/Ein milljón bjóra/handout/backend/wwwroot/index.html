@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ein milljón bjóra</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ein milljón bjóra</h1>
+      <p>Ein mynd, einn bjór.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Telja bjór</h2>
+        <form id="form">
+          <label
+            >Mynd<input name="photo" type="file" accept="image/*" required
+          /></label>
+          <button type="submit" id="submit">Telja</button>
+        </form>
+        <p id="result"></p>
+      </section>
+
+      <section class="card">
+        <h2>Tölfræði</h2>
+        <p class="counter">
+          <strong id="counted">0</strong> / <span id="goal"></span> taldir
+          bjórar
+        </p>
+        <p class="muted">
+          <span id="approved">0</span> myndir taldar ·
+          <span id="rejected">0</span> myndum hafnað
+        </p>
+        <svg
+          id="map"
+          viewBox="0 0 360 180"
+          role="img"
+          aria-label="Brugghús á heimskorti"
+        >
+          <g id="dots"></g>
+        </svg>
+        <p id="flag"></p>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

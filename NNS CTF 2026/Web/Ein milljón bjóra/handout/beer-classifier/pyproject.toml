@@ -1,0 +1,29 @@
+[project]
+name = "beer-classifier"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "einops==0.8.2",
+    "fastapi==0.141.1",
+    "huggingface-hub==1.28.0",
+    "numpy==2.5.2",
+    "pillow==12.3.0",
+    "python-multipart==0.0.32",
+    "safetensors==0.8.0",
+    "torch==2.13.0",
+    "torchvision==0.28.0",
+    "transformers==5.15.1",
+    "uvicorn==0.52.4",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

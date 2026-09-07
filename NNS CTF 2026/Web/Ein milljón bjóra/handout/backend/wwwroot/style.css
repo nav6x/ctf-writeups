@@ -1,0 +1,159 @@
+:root {
+  color-scheme: dark;
+  --bg: #14110c;
+  --card: #1e1a13;
+  --line: #3a3224;
+  --text: #f2e8d5;
+  --gold: #e9b23c;
+  --muted: #a2957a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem 4rem;
+  background: var(--bg);
+  color: var(--text);
+  font:
+    16px/1.5 system-ui,
+    sans-serif;
+}
+
+header,
+main {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--gold);
+}
+
+h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+header p {
+  color: var(--muted);
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin-top: 2rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+}
+
+button {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border: 0;
+  border-radius: 0.4rem;
+  background: var(--gold);
+  color: #14110c;
+  font: 600 1rem/1 inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: var(--line);
+  color: var(--muted);
+  cursor: progress;
+}
+
+.spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--line);
+  border-top-color: var(--gold);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 2.4s;
+  }
+}
+
+.counter {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.counter strong {
+  color: var(--gold);
+}
+.muted {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+#map {
+  width: 100%;
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.4rem;
+  background: url("/world.svg") center / 100% 100% no-repeat;
+}
+
+#map circle {
+  fill: var(--gold);
+  fill-opacity: 0.75;
+  stroke: var(--bg);
+  stroke-width: 0.3;
+}
+
+#result,
+#flag {
+  min-height: 1.5rem;
+  margin-bottom: 0;
+  word-break: break-all;
+}
+#flag {
+  color: var(--gold);
+  font-weight: 600;
+}

@@ -1,0 +1,23 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.sage text eol=lf
+*.c text eol=lf
+*.rs text eol=lf
+*.ts text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.sol text eol=lf
+*.yml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.png binary
+*.jpg binary
+*.woff binary
+*.tar.gz binary
+*.zip binary
+*.bin binary
+*.ko binary
+

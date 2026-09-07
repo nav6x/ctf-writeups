@@ -1,0 +1,18 @@
+name: "ein-milljon-bjora-dev"
+
+services:
+  clickhouse:
+    image: "clickhouse/clickhouse-server:26.7.5.10"
+    environment:
+      CLICKHOUSE_SKIP_USER_SETUP: "1"
+
+  beer-classifier:
+    build: ./beer-classifier
+
+  backend:
+    build: ./backend
+    ports:
+      - "127.0.0.1:3000:3000"
+    depends_on:
+      - clickhouse
+      - beer-classifier
