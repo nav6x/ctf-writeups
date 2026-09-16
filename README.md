@@ -8,6 +8,7 @@ Each event has its own folder. Inside, every challenge sits under its category a
 
 - [BushBash CTF 2026](<BushBash CTF 2026/README.md>)
 - [COMPFEST 18 CTF 2026](<COMPFEST 18 CTF 2026/README.md>)
+- [K17 CTF 2026](<K17 CTF 2026/README.md>)
 - [NNS CTF 2026](<NNS CTF 2026/README.md>)
 - [Niphers 3.0 CTF](<Niphers 3.0 CTF/README.md>)
 - [No Hack No CTF 2026](<No Hack No CTF 2026/README.md>)
