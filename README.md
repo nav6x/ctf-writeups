@@ -12,6 +12,7 @@ Each event has its own folder. Inside, every challenge sits under its category a
 - [NNS CTF 2026](<NNS CTF 2026/README.md>)
 - [Niphers 3.0 CTF](<Niphers 3.0 CTF/README.md>)
 - [No Hack No CTF 2026](<No Hack No CTF 2026/README.md>)
+- [Security Impossible CTF 2026 - Monash University](<Security Impossible CTF 2026 - Monash University/README.md>)
 - [TraceBash CTF 2026](<TraceBash CTF 2026/README.md>)
 
 Each event's README lists its challenges with the captured flag.
